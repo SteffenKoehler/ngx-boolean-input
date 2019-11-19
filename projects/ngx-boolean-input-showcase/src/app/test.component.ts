@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { BooleanInput } from 'ngx-boolean-input';
 
 @Component({
   selector: 'app-test',
@@ -9,6 +10,7 @@ export class TestComponent {
   @Input() name: string;
 
   @Input()
+  @BooleanInput()
   editable: boolean;
 
 }
