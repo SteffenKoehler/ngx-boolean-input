@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-boolean-input": [
+        "dist/ngx-boolean-input"
+      ],
+      "ngx-boolean-input/*": [
+        "dist/ngx-boolean-input/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
