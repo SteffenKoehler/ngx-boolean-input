@@ -12,6 +12,6 @@ export function BooleanInput(): any {
           this[key] = value;
         }
       }
-    }
-  }
+    };
+  };
 }
