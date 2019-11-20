@@ -1,12 +1,12 @@
 # ngx-boolean-input
 
-## Install
+## ➕ Install
 
 ```sh 
-npm install --save ngx-boolean-input
+npm install ngx-boolean-input
 ```
 
-## Use
+## 🤓 How to use
 
 ```javascript
 import { BooleanInput } from 'ngx-boolean-input';
@@ -25,6 +25,13 @@ export class AppComponent {
 }
 ```
 
+## 💡 Inspiration
 
+* Dominic Elm
+https://dev.to/angular/decorators-do-not-work-as-you-might-expect-3gmj
+* michaeljota https://github.com/angular/angular/issues/14761
+
+
+## 📝 Note
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
