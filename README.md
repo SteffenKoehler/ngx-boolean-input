@@ -25,6 +25,14 @@ export class AppComponent {
 }
 ```
 
+```html
+<app-test></app-test> <!-- false -->
+<app-test editable></app-test> <!-- true -->
+<app-test [editable]="false"></app-test> <!-- false -->
+<app-test editable="false"></app-test> <!-- false -->
+<app-test [editable]="true"></app-test> <!-- true -->
+```
+
 ## 💡 Inspiration
 
 * Dominic Elm
