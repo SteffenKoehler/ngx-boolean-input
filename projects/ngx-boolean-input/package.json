@@ -1,6 +1,6 @@
 {
   "name": "ngx-boolean-input",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple Angular decorator for boolean inputs.",
   "author": {
     "name": "Steffen Köhler",
