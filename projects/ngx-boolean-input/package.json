@@ -1,6 +1,28 @@
 {
   "name": "ngx-boolean-input",
   "version": "0.0.1",
+  "description": "A simple Angular decorator for boolean inputs.",
+  "author": {
+    "name": "Steffen Köhler",
+    "email": "mail@steffen-koehler.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SteffenKoehler/ngx-boolean-input.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SteffenKoehler/ngx-boolean-input/issues"
+  },
+  "homepage": "https://github.com/SteffenKoehler/ngx-boolean-input",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "decorator",
+    "boolean",
+    "input"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
