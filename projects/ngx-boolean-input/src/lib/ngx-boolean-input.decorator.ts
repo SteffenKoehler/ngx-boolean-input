@@ -3,7 +3,7 @@ export function BooleanInput(): any {
     const key = Symbol();
     return {
       get() {
-        return this[key];
+        return this[key] || false;
       },
       set(value: boolean | string) {
         if (typeof value === 'string') {
