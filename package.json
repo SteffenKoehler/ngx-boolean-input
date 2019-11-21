@@ -5,6 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:publish": "npm run build:lib && npm run publish",
+    "build:lib": "ng build ngx-boolean-input",
+    "publish": "cd dist/ngx-boolean-input && npm publish",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
