@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:publish": "npm run build:lib && npm run publish",
-    "build:lib": "ng build ngx-boolean-input",
+    "build:lib": "ng build ngx-boolean-input --prod",
     "publish": "cd dist/ngx-boolean-input && npm publish",
     "test": "ng test",
     "lint": "ng lint",
