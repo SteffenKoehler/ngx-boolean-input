@@ -21,7 +21,7 @@ export class AppComponent {
 
   @Input()
   @BooleanInput()
-  input: boolean;
+  editable: boolean;
 }
 ```
 
