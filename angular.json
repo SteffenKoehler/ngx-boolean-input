@@ -1,6 +1,51 @@
 {
   "version": 1,
   "projects": {
+    "ngx-boolean-input": {
+      "projectType": "library",
+      "root": "libs/ngx-boolean-input",
+      "sourceRoot": "libs/ngx-boolean-input/src",
+      "prefix": "ngx-boolean-input",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "outputs": [
+            "dist/libs/ngx-boolean-input"
+          ],
+          "options": {
+            "project": "libs/ngx-boolean-input/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ngx-boolean-input/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/ngx-boolean-input/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/ngx-boolean-input"
+          ],
+          "options": {
+            "jestConfig": "libs/ngx-boolean-input/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ngx-boolean-input/src/**/*.ts",
+              "libs/ngx-boolean-input/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
     "showcase": {
       "projectType": "application",
       "root": "apps/showcase",
@@ -9,7 +54,9 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/apps/showcase",
             "index": "apps/showcase/src/index.html",
@@ -21,7 +68,9 @@
               "apps/showcase/src/favicon.ico",
               "apps/showcase/src/assets"
             ],
-            "styles": ["apps/showcase/src/styles.scss"],
+            "styles": [
+              "apps/showcase/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -86,7 +135,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/showcase"],
+          "outputs": [
+            "coverage/apps/showcase"
+          ],
           "options": {
             "jestConfig": "apps/showcase/jest.config.js",
             "passWithNoTests": true
@@ -114,9 +165,13 @@
         },
         "lint": {
           "builder": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/showcase-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/showcase-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
