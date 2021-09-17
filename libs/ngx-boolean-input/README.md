@@ -42,4 +42,6 @@ https://dev.to/angular/decorators-do-not-work-as-you-might-expect-3gmj
 
 ## 📝 Note
 
-This project was generated using [Nx](https://nx.dev).
+This library was generated with [Nx](https://nx.dev).
+
+
