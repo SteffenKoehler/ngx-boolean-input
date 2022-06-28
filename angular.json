@@ -2,6 +2,7 @@
   "version": 1,
   "projects": {
     "ngx-boolean-input": {
+      "$schema": "../../node_modules/nx/schemas/project-schema.json",
       "projectType": "library",
       "root": "libs/ngx-boolean-input",
       "sourceRoot": "libs/ngx-boolean-input/src",
@@ -31,7 +32,7 @@
             "coverage/libs/ngx-boolean-input"
           ],
           "options": {
-            "jestConfig": "libs/ngx-boolean-input/jest.config.js",
+            "jestConfig": "libs/ngx-boolean-input/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -44,9 +45,11 @@
             ]
           }
         }
-      }
+      },
+      "tags": []
     },
     "showcase": {
+      "$schema": "../../node_modules/nx/schemas/project-schema.json",
       "projectType": "application",
       "root": "apps/showcase",
       "sourceRoot": "apps/showcase/src",
@@ -139,13 +142,15 @@
             "coverage/apps/showcase"
           ],
           "options": {
-            "jestConfig": "apps/showcase/jest.config.js",
+            "jestConfig": "apps/showcase/jest.config.ts",
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "showcase-e2e": {
+      "$schema": "../../node_modules/nx/schemas/project-schema.json",
       "root": "apps/showcase-e2e",
       "sourceRoot": "apps/showcase-e2e/src",
       "projectType": "application",
@@ -174,39 +179,11 @@
             ]
           }
         }
-      }
-    }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/angular",
-    "packageManager": "npm"
-  },
-  "schematics": {
-    "@nrwl/angular": {
-      "application": {
-        "linter": "eslint"
       },
-      "library": {
-        "linter": "eslint"
-      },
-      "storybook-configuration": {
-        "linter": "eslint"
-      }
-    },
-    "@nrwl/angular:application": {
-      "style": "scss",
-      "linter": "eslint",
-      "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
-    },
-    "@nrwl/angular:library": {
-      "style": "scss",
-      "linter": "eslint",
-      "unitTestRunner": "jest"
-    },
-    "@nrwl/angular:component": {
-      "style": "scss"
+      "tags": [],
+      "implicitDependencies": [
+        "showcase"
+      ]
     }
-  },
-  "defaultProject": "showcase"
+  }
 }
