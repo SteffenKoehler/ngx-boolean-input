@@ -8,7 +8,7 @@ npm install ngx-boolean-input
 
 ## 🤓 How to use
 
-```javascript
+```typescript
 import { BooleanInput } from 'ngx-boolean-input';
 
 @Component({
@@ -21,7 +21,7 @@ export class AppComponent {
 
   @Input()
   @BooleanInput()
-  editable: boolean;
+  editable: boolean | string | undefined;
 }
 ```
 

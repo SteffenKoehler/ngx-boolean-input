@@ -8,7 +8,7 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "lib:build:ngx-boolean-input": "nx build ngx-boolean-input"
+    "lib:build:ngx-boolean-input": "nx build ngx-boolean-input --prod"
   },
   "private": true,
   "dependencies": {
